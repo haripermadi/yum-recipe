@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  /* padding: 3rem; */
+}
+
+::selection {
+  /* background-color: $color-primary; */
+  color: #fff;
+}
+
+input {
+  text-decoration: none;
+}
+
+.headerContainer {
+  background-image: url("../assets/food-header.jpg");
+  background-size: cover;
+  height: 65vh;
+  /* position: relative;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerTitle {
+  font-size: 6rem;
+  color: #ecf0f1;
+  margin-bottom: 2rem;
+}
+
+.search {
+  background-color: #ecf0f1;
+  padding: 10px 10px 0 10px;
+  width: 50%;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.searchInput {
+  margin: 0 auto;
+  height: 50px;
+  font-size: 2rem;
+  border: none;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.icon {
+  padding: 10px;
+  background: #fff;
+  color: grey;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LIST RECIPES------ */
+.listContainer {
+  width: 30rem;
+  padding: 10px;
+  margin: 5px;
+  /* background-color: teal; */
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.listContainer:hover {
+  cursor: pointer;
+  text-decoration: none;
+  transform: translateY(-1.5rem) scale(0.9);
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #2c3e50;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  color: #95a5a6;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+/* detail----- */
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: violet; */
+}
+
+.detailImage {
+  /* display: block; */
+  width: 90%;
+  height: 50vh;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.listContainerDetail {
+  /* display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  */
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.listItem {
+  /* display: flex; */
+  /* background-color: yellowgreen; */
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+  border-bottom: solid 1px #bdc3c7;
+  width: 50%;
+
+  /* flex-direction: row; */
+}
+
+.item {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.directionContainer {
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+.videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 100%;
+  height: 65vh;
+}
+
+.text {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  padding: 1rem 0;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.empty:hover {
+  transform: translateY(-1rem) scale(1.2);
+}
+
+.icon-empty {
+  padding: 1rem;
+  font-size: 7rem;
+  color: #2c3e50;
+}
+
+.icon-empty:hover {
+  color: yellowgreen;
+}
+
+.text-empty {
+  font-size: 2rem;
+  color: #2c3e50;
+  padding: 1rem;
+  text-transform: capitalize;
+}
